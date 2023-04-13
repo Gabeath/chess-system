@@ -1,14 +1,14 @@
 import java.util.Scanner;
 
-import boardgame.Position;
+import application.UI;
+import chess.ChessMatch;
 
 public class App {
   public static void main(String[] args) throws Exception {
     Scanner scanner = new Scanner(System.in);
 
-    System.out.println("Hello, World!");
-    Position position = new Position(3, 5);
-    System.out.println(position);
+    ChessMatch chessMatch = new ChessMatch();
+    UI.printBoard(chessMatch.getPieces());
 
     scanner.close();
   }
