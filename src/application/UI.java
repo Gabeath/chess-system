@@ -42,6 +42,11 @@ public class UI {
     }
   }
 
+  public static void clearScreen() {
+    System.out.print("\033[H\033[2J");
+    System.out.flush();
+  }
+
   public static void printBoard(ChessPiece[][] chessPieces) {
     for (int i = 0; i < chessPieces.length; i++) {
       System.out.print((8 - i) + " ");
