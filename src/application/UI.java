@@ -42,7 +42,7 @@ public class UI {
     } else if (chessPiece.getColor() == Color.WHITE) {
       System.out.print(ANSI_WHITE + chessPiece + ANSI_RESET);
     } else {
-      System.out.print(ANSI_YELLOW + chessPiece + ANSI_RESET);
+      System.out.print(ANSI_BLACK + chessPiece + ANSI_RESET);
     }
     System.out.print(" ");
   }
